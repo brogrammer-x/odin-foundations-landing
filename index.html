@@ -3,48 +3,67 @@
 	<head>
 		<meta charset="utf-8">
 		<title>My First Webpage</title>
+        <link rel="stylesheet" href="styles/index.css">
 	</head>
 	
 	<body>
         <div id="section_1">
             <div id="header">
-                <span><a>Header Logo</a></span>
-                <a>header link one</a>
-                <a>header link two</a>
-                <a>header link three</a>
+                <a class="header_logo"><span>Header Logo</span></a>
+                <a class="header_link">header link one</a>
+                <a class="header_link">header link two</a>
+                <a class="header_link">header link three</a>
             </div>
             
             <div id="hero">
-                <h1>Hero Header</h1>
-                <br>
-                <p>smaller text here</p>
-                <button><a>dummy button</a></button>
+                <div class="hero_text">
+                    <h1 class="hero_main">Hero Header</h1>
+                    <p class="hero_secondary">smaller text here</p>
+                    <a><button class="button"><span class="hero_secondary">dummy button</span></button></a>
+                </div>
+                <img class="hero_image" src="assets/placeholder image.jpg">
+                
             </div>
         </div>
         
         <div id="section_2">
-            <h2>some random information</h2>
-            <div>
-                <!--use grid here-->
+            <h2 class="section_2_header">some random information</h2>
+            <div class="flexdiv">
+                <div>
+                    <img class="flexdiv_image" src="assets/placeholder image.jpg">
+                    <p class="flexfiv_image_caption">small caption</p>
+                </div>
+                <div>
+                    <img class="flexdiv_image" src="assets/placeholder image.jpg">
+                    <p class="flexfiv_image_caption">small caption</p>
+                </div>
+                <div>
+                    <img class="flexdiv_image" src="assets/placeholder image.jpg">
+                    <p class="flexfiv_image_caption">small caption</p>
+                </div>
+                <div>
+                    <img class="flexdiv_image" src="assets/placeholder image.jpg">
+                    <p class="flexfiv_image_caption">small caption</p>
+                </div>
             </div>
         </div>
 
         <div id="section_3">
-            <p>quote here</p>
-            <span>float this to the right maybe</span>
+            <p class="quote_text">quote here</p>
+            <p class="quote_author">float this to the right maybe</p>
         </div>
 
         <div id="section_4">
-            <p>
-                <span>Call to Action!</span>
+            <div>
+                <span class="action_call_header">Call to Action!</span>
                 <br>
-                Press the button on the right!
-            </p>
-            <button><a>dummy button</a></button>
+                <span class="action_call_text">Press the button on the right!</span>
+            </div>
+            <a><button class="action_call_button"><span class="hero_secondary">dummy button</span></button></a>
         </div>
 
         <div id="footer">
-            <span>Copyright The Odin Project</span>
+            <p class="footer_text">Copyright © The Odin Project 2022</p>
         </div>
 	</body>
 </html>
