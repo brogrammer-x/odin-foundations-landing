@@ -7,62 +7,70 @@
 	</head>
 	
 	<body>
-        <div id="section_1">
-            <div id="header">
-                <a class="header_logo"><span>Header Logo</span></a>
-                <a class="header_link">header link one</a>
-                <a class="header_link">header link two</a>
-                <a class="header_link">header link three</a>
+        <div class="main-color padding-1em">
+            <div class="flex flex-center-main">
+                <a class="high-contrast extra-bold medium-small-font max-right-margin">Header Logo</a>
+                <a class="less-contrast small-font small-right-margin">header link one</a>
+                <a class="less-contrast small-font small-right-margin">header link two</a>
+                <a class="less-contrast small-font small-right-margin">header link three</a>
             </div>
             
-            <div id="hero">
-                <div class="hero_text">
-                    <h1 class="hero_main">Hero Header</h1>
-                    <p class="hero_secondary">smaller text here</p>
-                    <a><button class="button"><span class="hero_secondary">dummy button</span></button></a>
+            <div class="flex flex-center-main hero">
+                <div class="hero-50-split">
+                    <h1 class="high-contrast extra-bold large-font">Hero Header</h1>
+                    <p class="less-contrast small-font">smaller text here</p>
+                    <a><button class="secondary-color rounded-border button-padding"><span class="high-contrast extra-bold small-font">dummy button</span></button></a>
                 </div>
-                <img class="hero_image" src="assets/placeholder image.jpg">
+                <img class="hero-50-split" src="assets/placeholder image.jpg">
             </div>
+
+            <div class="separator"></div>
         </div>
         
-        <div id="section_2">
-            <h2 class="section_2_header">some random information</h2>
-            <div class="flexdiv">
+        <div>
+            <h2 class="extra-bold medium-font center-text">some random information</h2>
+            <div class="flex flex-center-main center-div section-2-div">
                 <div>
-                    <img class="flexdiv_image" src="assets/placeholder image.jpg">
-                    <p class="flexdiv_image_caption">small caption</p>
+                    <img class="section-2-image secondary-color-border rounded-border" src="assets/placeholder image.jpg">
+                    <p class="small-font center-text">small caption</p>
                 </div>
                 <div>
-                    <img class="flexdiv_image" src="assets/placeholder image.jpg">
-                    <p class="flexdiv_image_caption">small caption</p>
+                    <img class="section-2-image secondary-color-border rounded-border" src="assets/placeholder image.jpg">
+                    <p class="small-font center-text">small caption</p>
                 </div>
                 <div>
-                    <img class="flexdiv_image" src="assets/placeholder image.jpg">
-                    <p class="flexdiv_image_caption">small caption</p>
+                    <img class="section-2-image secondary-color-border rounded-border" src="assets/placeholder image.jpg">
+                    <p class="small-font center-text">small caption</p>
                 </div>
                 <div>
-                    <img class="flexdiv_image" src="assets/placeholder image.jpg">
-                    <p class="flexdiv_image_caption">small caption</p>
+                    <img class="section-2-image secondary-color-border rounded-border" src="assets/placeholder image.jpg">
+                    <p class="small-font center-text">small caption</p>
                 </div>
             </div>
         </div>
 
-        <div id="section_3">
-            <p class="quote_text">quote here</p>
-            <p class="quote_author">float this to the right maybe</p>
+        <div class="separator"></div>
+
+        <div id="section-3">
+            <p class="main-color-text light medium-font italic">quote here</p>
+            <p class="main-color-text extra-bold medium-small-font right-align-text">float this to the right maybe</p>
         </div>
 
-        <div id="section_4">
+        <div class="separator"></div>
+
+        <div id="section-4" class="flex flex-center-main center-div secondary-color secondary-color-border rounded-border">
             <div>
-                <span class="action_call_header">Call to Action!</span>
+                <span class="high-contrast extra-bold medium-small-font">Call to Action!</span>
                 <br>
-                <span class="action_call_text">Press the button on the right!</span>
+                <span class="less-contrast small-font">Press the button on the right!</span>
             </div>
-            <a><button class="action_call_button"><span class="hero_secondary">dummy button</span></button></a>
+            <a><button class="secondary-color less-contrast rounded-border button-padding"><span class="less-contrast extra-bold small-font">dummy button</span></button></a>
         </div>
 
-        <div id="footer">
-            <p class="footer_text">Copyright © The Odin Project 2022</p>
+        <div class="separator"></div>
+
+        <div id="footer" class="main-color">
+            <p class="less-contrast center-text">Copyright © The Odin Project 2022</p>
         </div>
 	</body>
 </html>

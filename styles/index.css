@@ -9,168 +9,178 @@ body {
     background-color: #FFFFFF;
 }
 
-#section_1 {
-    background-color: #1F2937;
-    padding: 1em 1em 1em 1em;
+/* div modifiers */
+
+    /* flex */
+.flex {
+    display: flex;
 }
 
-#section_2 {
-    margin-bottom: 3em;
-    background-color: #FFFFFF;
-}
-
-#section_3 {
-    background-color: #E5E7EB;
-    display: grid;
-    grid-template-columns: 50vw;
-    grid-template-rows: 20vh;
+.flex-center-main {
     justify-content: center;
-    margin-bottom: 3em;
 }
 
-#section_4 {
-    height: 20vh;
-    max-width: 70vw;
-    margin: auto;
-    background-color: #3882F6;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+/* text modifiers */
 
-#header {
-    display: flex;
-}
-
-#hero {
-    display: flex;
-    justify-content: center;
-    margin: 6em 15em;
-}
-
-#header > * {
-    margin-bottom: 1em;
-}
-
-#footer {
-    background-color: #1F2937;
-    padding: 1em 2em 1em 2em;
-    margin-top: 3em;
-}
-
-#footer > p {
-    color:#E5E7EB;
+    /* position */
+.center-text {
     text-align: center;
 }
 
-.action_call_button {
-    background: #3882F6;
-    border: 2px solid #E5E7EB;
-    border-radius: 10px;
-    padding: 10px;
+.right-align-text {
+    text-align: right;
 }
 
-.action_call_header {
-    font-weight: 800;
-    color: #F9FAF8;
-    font-size: 24px;
+    /* font style */
+.italic {
+    font-style: italic;
 }
 
-.action_call_text {
-    color: #E5E7EB;
+    /* font size */
+.small-font {
     font-size: 18px;
 }
 
-.button {
-    background: #3882F6;
-    border: 0;
-    border-radius: 10px;
+.medium-small-font {
+    font-size: 24px;
+}
+
+.medium-font {
+    font-size: 36px;
+}
+
+.large-font {
+    font-size: 48px;
+}
+
+    /* font weight */
+.extra-bold {
+    font-weight: 800;
+}
+
+.light {
+    font-weight: 100;
+}
+
+/* CSS Box modifiers */
+
+    /* padding */
+.padding-1em {
+    padding: 1em;
+}
+
+.button-padding {
     padding: 10px;
 }
 
-.flexdiv {
+    /* border */
+.rounded-border {
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+    /* margins */
+.center-div {
     margin: auto;
-    display: flex;
-    max-width: 60vw;
-    justify-content: space-evenly;
 }
 
-.flexdiv_image {
-    width: 10vw;
-    aspect-ratio: 1/1;
-    border: 2px solid #3882F6;
-    border-radius: 10px;
-    margin: 2em 2em -1em 2em;
-}
-
-.flexdiv_image_caption {
-    font-size: 18px;
-    text-align: center;
-}
-
-.header_logo {
-    color:#F9FAF8;
-    font-size: 24px;
-    font-weight: 800;
+.max-right-margin {
     margin-right: auto;
 }
 
-.header_link {
-    color: #E5E7EB;
-    font-size: 18px;
-    margin: 0 0.5em 0 0.5em;
+.small-right-margin {
+    margin: 0 0.5em;
 }
 
-.hero_image {
+    /* separator div definition */
+.separator {
+    height: 1em;
+    margin: 2em 0 0 0;
+}
+
+/* colors */
+
+.main-color {
+    background-color: #1F2937;
+}
+
+.main-color-text {
+    color: #1F2937;
+}
+
+.main-color-border {
+    border-color: #1F2937;
+}
+
+.secondary-color {
+    background-color: #3882F6;
+}
+
+.secondary-color-text {
+    color: #3882F6;
+}
+
+.secondary-color-border {
+    border-color: #3882F6;
+}
+
+.high-contrast {
+    color: #F9FAF8;
+}
+
+.high-contrast-border {
+    border-color: #F9FAF8;
+}
+
+.less-contrast {
+    color: #E5E7EB;
+}
+
+.less-contrast-border {
+    border-color: #E5E7EB;
+}
+
+/* specific CSS */
+
+    /* hero section */
+.hero {
+    margin: 6em 15em;
+}
+
+.hero-50-split {
     width: 50%;
     height: auto;
 }
 
-.hero_main {
-    color: #F9FAF8;
-    font-size: 48px;
-    font-weight: 800;
+    /* section 2 */
+.section-2-div {
+    max-width: 60vw;
+    justify-content: space-evenly;
 }
 
-.hero_secondary {
-    color: #E5E7EB;
-    font-size: 18px;
+.section-2-image {
+    width: 10vw;
+    aspect-ratio: 1/1;
+    margin: 2em 2em -1em 2em;
 }
 
-.hero_text {
-    width: 50%;
+    /* ID definitions */
+
+#footer {
+    padding: 1em 2em;
 }
 
-.quote_author {
-    color: #1F2937;
-    font-weight: 800;
-    font-size: 24px;
-    text-align: right;
+#section-3 {
+    background: #E5E7EB;
+    display: grid;
+    grid-template-columns: 50vw;
+    grid-template-rows: 20vh;
+    justify-content: center;
 }
 
-.quote_text {
-    color: #1F2937;
-    font-weight: 100;
-    font-size: 36px;
-    font-style: italic;
+#section-4 {
+    height: 20vh;
+    max-width: 70vw;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.section_2_header {
-    font-size: 36px;
-    font-weight: 800;
-    color: #1F2937;
-    text-align: center;
-}
-
-div.flexdiv {
-
-}
-
-span.hero_secondary {
-    font-weight: 800;
-}
-
-/* .test {
-    font-weight: 800;
-} */
