@@ -1,6 +1,12 @@
+html {
+    max-width: 95vw;
+    margin: auto;
+    background-color: #000000;
+}
+
 body {
-    padding: 0;
     margin: 0;
+    background-color: #FFFFFF;
 }
 
 #section_1 {
@@ -8,16 +14,29 @@ body {
     padding: 1em 1em 1em 1em;
 }
 
+#section_2 {
+    margin-bottom: 3em;
+    background-color: #FFFFFF;
+}
+
 #section_3 {
     background-color: #E5E7EB;
+    display: grid;
+    grid-template-columns: 50vw;
+    grid-template-rows: 20vh;
+    justify-content: center;
+    margin-bottom: 3em;
 }
 
 #section_4 {
+    height: 20vh;
     max-width: 70vw;
     margin: auto;
     background-color: #3882F6;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #header {
@@ -26,18 +45,18 @@ body {
 
 #hero {
     display: flex;
+    justify-content: center;
+    margin: 6em 15em;
 }
 
 #header > * {
     margin-bottom: 1em;
 }
 
-#hero > * {
-    flex: auto;
-}
-
 #footer {
     background-color: #1F2937;
+    padding: 1em 2em 1em 2em;
+    margin-top: 3em;
 }
 
 #footer > p {
@@ -48,32 +67,52 @@ body {
 .action_call_button {
     background: #3882F6;
     border: 2px solid #E5E7EB;
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 10px;
+}
+
+.action_call_header {
+    font-weight: 800;
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.action_call_text {
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
 .button {
     background: #3882F6;
     border: 0;
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 10px;
 }
 
 .flexdiv {
+    margin: auto;
     display: flex;
+    max-width: 60vw;
     justify-content: space-evenly;
 }
 
 .flexdiv_image {
-    height: 50px;
-    width: 50px;
+    width: 10vw;
+    aspect-ratio: 1/1;
     border: 2px solid #3882F6;
-    border-radius: 2px;
+    border-radius: 10px;
+    margin: 2em 2em -1em 2em;
+}
+
+.flexdiv_image_caption {
+    font-size: 18px;
+    text-align: center;
 }
 
 .header_logo {
     color:#F9FAF8;
     font-size: 24px;
+    font-weight: 800;
     margin-right: auto;
 }
 
@@ -84,12 +123,14 @@ body {
 }
 
 .hero_image {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
 .hero_main {
-
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 800;
 }
 
 .hero_secondary {
@@ -98,20 +139,18 @@ body {
 }
 
 .hero_text {
-    color: #F9FAF8;
-    font-size: 48px;
-    font-weight: 800;
+    width: 50%;
 }
 
 .quote_author {
-    font-color: #1F2937;
+    color: #1F2937;
     font-weight: 800;
     font-size: 24px;
     text-align: right;
 }
 
 .quote_text {
-    font-color: #1F2937;
+    color: #1F2937;
     font-weight: 100;
     font-size: 36px;
     font-style: italic;
