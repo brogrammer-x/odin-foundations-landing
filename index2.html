@@ -6,30 +6,28 @@
         <link rel="stylesheet" href="styles/index.css">
 	</head>
 	
-	<body>
+	<body class = "grid-body">
         <div class="main-color padding-1em">
-            <div class="flex flex-center-main">
-                <a class="high-contrast extra-bold medium-small-font max-right-margin">Header Logo</a>
+            <div class="grid-header">
+                <a class="high-contrast extra-bold medium-small-font">Header Logo</a>
                 <a class="less-contrast small-font small-right-margin">header link one</a>
                 <a class="less-contrast small-font small-right-margin">header link two</a>
                 <a class="less-contrast small-font small-right-margin">header link three</a>
             </div>
-            
-            <div class="flex flex-center-main hero">
-                <div class="hero-50-split">
+
+            <div class="grid-hero">
+                <div class="grid-hero-item">
                     <h1 class="high-contrast extra-bold large-font">Hero Header</h1>
                     <p class="less-contrast small-font">smaller text here</p>
                     <a><button class="secondary-color rounded-border button-padding"><span class="high-contrast extra-bold small-font">dummy button</span></button></a>
                 </div>
-                <img class="hero-50-split" src="assets/placeholder image.jpg">
+                <img class="grid-hero-item" src="assets/placeholder image.jpg">
             </div>
-
-            <div class="separator"></div>
         </div>
         
-        <div>
-            <h2 class="extra-bold medium-font center-text">some random information</h2>
-            <div class="flex flex-center-main center-div section-2-div">
+        <div class="center-text">
+            <h2 class="extra-bold medium-font">some random information</h2>
+            <div class="grid-section-2">
                 <div class="center-text">
                     <img class="section-2-image secondary-color-border rounded-border" src="assets/placeholder image.jpg">
                     <p class="small-font">small caption</p>
@@ -48,17 +46,13 @@
                 </div>
             </div>
         </div>
-
-        <div class="separator"></div>
 
         <div id="section-3">
             <p class="main-color-text light medium-font italic">quote here</p>
             <p class="main-color-text extra-bold medium-small-font right-align-text">float this to the right maybe</p>
         </div>
 
-        <div class="separator"></div>
-
-        <div id="section-4" class="flex flex-center-main center-div secondary-color secondary-color-border rounded-border">
+        <div class="grid-section-4 secondary-color secondary-color-border rounded-border">
             <div>
                 <span class="high-contrast extra-bold medium-small-font">Call to Action!</span>
                 <br>
@@ -67,10 +61,9 @@
             <a><button class="secondary-color less-contrast rounded-border button-padding"><span class="less-contrast extra-bold small-font">dummy button</span></button></a>
         </div>
 
-        <div class="separator"></div>
-
-        <div id="footer" class="main-color">
+        <div class="main-color">
             <p class="less-contrast center-text">Copyright © The Odin Project 2022</p>
         </div>
+
 	</body>
 </html>

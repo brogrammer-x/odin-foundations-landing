@@ -1,5 +1,5 @@
 html {
-    max-width: 95vw;
+    max-width: 97.5vw;
     margin: auto;
     background-color: #000000;
 }
@@ -18,6 +18,12 @@ body {
 
 .flex-center-main {
     justify-content: center;
+}
+
+    /* separator div definition */
+.separator {
+   height: 1em;
+    margin: 2em 0 0 0;
 }
 
 /* text modifiers */
@@ -92,12 +98,6 @@ body {
     margin: 0 0.5em;
 }
 
-    /* separator div definition */
-.separator {
-    height: 1em;
-    margin: 2em 0 0 0;
-}
-
 /* colors */
 
 .main-color {
@@ -154,14 +154,13 @@ body {
 
     /* section 2 */
 .section-2-div {
-    max-width: 60vw;
+    max-width: 70vw;
     justify-content: space-evenly;
 }
 
 .section-2-image {
-    width: 10vw;
+    width: 75%;
     aspect-ratio: 1/1;
-    margin: 2em 2em -1em 2em;
 }
 
     /* ID definitions */
@@ -183,4 +182,57 @@ body {
     max-width: 70vw;
     justify-content: space-around;
     align-items: center;
+}
+
+/* index2.html-specific css */
+
+.grid-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    row-gap: 3em;
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, fit-content(100%));
+    grid-auto-rows: 5vh;
+}
+
+.grid-hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100%;
+
+    margin: 6em 15em;
+}
+
+.grid-hero-item {
+    max-width: 100%;
+}
+
+.grid-section-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100%;
+
+    justify-items: center;
+    align-items: center;
+
+    max-width: 70vw;
+    margin: auto;
+}
+
+.grid-section-4 {
+    height: 20vh;
+    width: 70vw;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100%;
+    justify-items: center;
+    align-items: center;
+
+    justify-self: center;
 }
